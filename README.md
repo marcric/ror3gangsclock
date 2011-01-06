@@ -1,4 +1,4 @@
-# Gangs Clock
+# RoR Gangs Clock
 
 ### What is Gangs Clock?
 
@@ -8,13 +8,13 @@
 * It would be nice a dynamic interface pointing out which of my Gang members are on which UTC slot.
 * I would like to develop it using Ruby on Rails
 
-###  So, what is this project expected to be?
+###  Project's side effect:
 
-* A step by step guide in developing, testing and publishing a RoR application.
+* It will be also, a step by step guide in developing, testing and publishing a RoR application.
 
 ### How it will be conducted?
 
-I will use the 37signal's design process, which primarily involves:
+I will use a design process, which primarily involves:
 
 1. A very basic model
 2. A Rough sketch
@@ -22,32 +22,17 @@ I will use the 37signal's design process, which primarily involves:
 4. Style and images
 5. Running code
 
-## First phase:
+### For more information, please, refer to the [Wiki][wk] page.
 
-Sketch => Documents => Wire frames => Photoshop => HTML/CSS
+### How does it begun? Who is behind it?
 
-## Second phase:
+* I have had the idea in mid 2009.
+* It was based on a original work from [Satoshi Asakawa][ashbb]
+* Originally published [here][gc1], then evolved into [here][gc2] and [here][gc3]
+* Now, in the beginning of 2011 it is time to implement it in Rails.
+* I will learn and share in the process, as always.
 
-Start with a basic model. Split the model into: _**index**_, _**new**_, _**edit**_ and _**show**_ screens
-
-## Third phase:
-
-* For each screen
-  * Sketch very roughly
-  * Design in HTML from the inside out
-  * Style incrementally
-  * Use an image manipulation program when necessary
-  * Then go back to HTML/CSS
-  * Implement the HTML as templates in running code (erb)
-  
-## Strategy summary:
-
-**Model => Sketch => HTML/CSS => Style => Refactor => Live Code**
-
-## Who is behind this project?
-
-_**[Marcos Ricardo][mr]**_ have had the original idea in mid 2009.
-Now in the beginning of 2011 it is time to implement it, learning a bit more as always.
+ _**[Marcos Ricardo][mr]**_
 
 ---
 
@@ -57,7 +42,12 @@ This project is released under the [Creative Commons][cc] License, including all
 
 ## Copyright
 
-Copyright (c) 2011. See LICENSE for details.
+Copyright (c) 2011. See License for details.
 
+[wk]: https://github.com/marcric/ror3gangsclock/wiki
+[ashbb]: http://twitter.com/ashbb
+[gc1]: http://the-shoebox.org/apps/75
+[gc2]: https://github.com/ashbb/gangsclock2/
+[gc3]: https://github.com/ashbb/gangsclock3/
 [mr]: http://marcric.com
 [cc]: http://creativecommons.org/licenses/by-sa/3.0/us/
