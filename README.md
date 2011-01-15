@@ -1,6 +1,6 @@
 # RoR3 Gang's Clock
 
-### What it is?
+### What is it?
 
 * People are connected by internet all over the World
 * They are generally grouped in Gangs
