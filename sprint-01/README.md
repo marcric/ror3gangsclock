@@ -12,7 +12,10 @@
 2. ```cd r3gc```
 3. ```rails s```
 4. Access and test the application using: http://0.0.0.0:3000;
-click the "About your application's environment" link, and You should get something like this:
+
+   click the "About your application's environment" link,
+
+   and You should get something like this:
 ![Project Environment](https://github.com/marcric/ror3gangsclock/wiki/rails_environment.png "Environment")
 
 5. Create...
