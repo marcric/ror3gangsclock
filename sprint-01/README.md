@@ -10,6 +10,39 @@
 
 1. Create the new application.
 ```rails new r3gc```
+<pre>
+Microsoft Windows XP [Version 5.1.2600]
+(C) Copyright 1985-2001 Microsoft Corp.
+
+E:\_AA-GangsClock\1st-phase>rails new r3gc
+      create
+      create  README
+      create  Rakefile
+      create  config.ru
+      create  .gitignore
+      create  Gemfile
+      create  app
+      create  app/controllers/application_controller.rb
+      create  app/helpers/application_helper.rb
+      create  app/mailers
+      create  app/models
+      create  app/views/layouts/application.html.erb
+.
+.
+.
+      create  test/performance/browsing_test.rb
+      create  test/test_helper.rb
+      create  test/unit
+      create  tmp
+      create  tmp/sessions
+      create  tmp/sockets
+      create  tmp/cache
+      create  tmp/pids
+      create  vendor/plugins
+      create  vendor/plugins/.gitkeep
+
+E:\_AA-GangsClock\1st-phase>cd r3gc
+</pre>
 
 2. Change to the application folder.
 ```cd r3gc```
@@ -37,10 +70,11 @@
 ```rails s```
 
 8. Test each of the actions now available using:
-
+```
    http://localhost:3000/home/index
    http://localhost:3000/home/about
    http://localhost:3000/home/signin
+```
 
 9. They all should work displaying a "Find me in..." message in a rough page.
 
@@ -48,7 +82,7 @@
 * Configure the routes turning the home/index the root page.
 * To do so, change the r3gc/config/routes.rb file to look like this:
 
-![Sprint01-01](https://gist.github.com/666277 "Sprint01-01")
+<script src="https://gist.github.com/666277.js?file=camping_app02.rb"></script>
 
 
 
