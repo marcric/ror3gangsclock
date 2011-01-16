@@ -44,23 +44,11 @@
 
 9. They all should work displaying a "Find me in..." message in a rough page.
 
-Since index is the default action, our work will start there.
-Configure the routes turning the home/index the root page.
-To do so, change the r3gc/config/routes.rb file to look like this:
+* Since index is the default action, our work will start there.
+* Configure the routes turning the home/index the root page.
+* To do so, change the r3gc/config/routes.rb file to look like this:
 
-```console
-R3gc::Application.routes.draw do
-
-  root :to => "home#index"
-  get "home/index"
-
-  get "home/about"
-
-  get "home/signin"
-
-end
-```
-
+![Sprint01-01](https://gist.github.com/666277 "Sprint01-01")
 
 
 
