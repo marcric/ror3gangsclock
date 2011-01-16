@@ -11,8 +11,7 @@
 1. Create the new application.
 
 
-```console
-
+```
 Microsoft Windows XP [Version 5.1.2600]
 (C) Copyright 1985-2001 Microsoft Corp.
 E:\_AA-GangsClock\1st-phase>rails new r3gc
@@ -39,7 +38,6 @@ E:\_AA-GangsClock\1st-phase>rails new r3gc
       create  vendor/plugins
       create  vendor/plugins/.gitkeep
 E:\_AA-GangsClock\1st-phase>cd r3gc
-
 ```
 
 2. You can check the application structure
