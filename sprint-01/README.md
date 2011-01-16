@@ -8,24 +8,11 @@
 
 ### Step by step guide:
 
-1. ```rails new r3gc```
+1. Create the new application.
+
 
 ```console
- $: rake spec
-(in /…/marcos/roodle_lms)
-/home/…/.rvm/rubies/ruby-1.9.2-p0/bin/ruby -S bundle exec rspec "./spec/models/user_spec.rb"
-*...********************************************
-
-Pending:
-  User A Role should be associated with a user
-    # needs to be associated and validated with a default role
-    # ./spec/models/user_spec.rb:10
-  User In the student roles, I should see user_name from my colleagues:
-    # Write failing test!
-    # ./spec/models/user_spec.rb:38
-```
-
-```Microsoft Windows XP [Version 5.1.2600]
+Microsoft Windows XP [Version 5.1.2600]
 (C) Copyright 1985-2001 Microsoft Corp.
 E:\_AA-GangsClock\1st-phase>rails new r3gc
       create
