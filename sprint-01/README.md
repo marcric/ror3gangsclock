@@ -10,10 +10,9 @@
 
 1. ```rails new r3gc```
 
-```console
+```
 Microsoft Windows XP [Version 5.1.2600]
 (C) Copyright 1985-2001 Microsoft Corp.
-
 E:\_AA-GangsClock\1st-phase>rails new r3gc
       create
       create  README
@@ -27,9 +26,6 @@ E:\_AA-GangsClock\1st-phase>rails new r3gc
       create  app/mailers
       create  app/models
       create  app/views/layouts/application.html.erb
-.
-.
-.
       create  test/performance/browsing_test.rb
       create  test/test_helper.rb
       create  test/unit
@@ -40,7 +36,6 @@ E:\_AA-GangsClock\1st-phase>rails new r3gc
       create  tmp/pids
       create  vendor/plugins
       create  vendor/plugins/.gitkeep
-
 E:\_AA-GangsClock\1st-phase>cd r3gc
 ```
 
