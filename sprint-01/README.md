@@ -42,8 +42,7 @@ E:\_AA-GangsClock\sprint-01>rails new r3gc
 
 E:\_AA-GangsClock\sprint-01>cd r3gc
 </pre>
-
-3. You can check the application structure
+2. You can check the application structure
 <pre>
 E:\_AA-GangsClock\sprint-01\r3gc>tree
 Folder PATH listing for volume Dados
@@ -84,8 +83,7 @@ E:.
 +---vendor
     +---plugins
 </pre>
-
-4. Start the server
+3. Start the server
 <pre>
 E:\_AA-GangsClock\sprint-01\r3gc>rails s
 => Booting WEBrick
@@ -96,16 +94,14 @@ E:\_AA-GangsClock\sprint-01\r3gc>rails s
 [2011-01-12 00:38:06] INFO  ruby 1.9.2 (2010-08-18) [i386-mingw32]
 [2011-01-12 00:38:06] INFO  WEBrick::HTTPServer#start: pid=3748 port=3000
 </pre>
-
-5. Access and test the application using: ```http://0.0.0.0:3000```
+4. Access and test the application using: ```http://0.0.0.0:3000```
 
    click the "About your application's environment" link,
    and You should get something like this:
 ![Project Environment](https://github.com/marcric/ror3gangsclock/wiki/rails_environment.png "Environment")
 
 * Everything should work fine with no warnings.
-
-6. Send a Ctrl-C to shutdown server
+5. Send a Ctrl-C to shutdown server
 <pre>
 [2011-01-15 11:59:59] INFO  going to shutdown ...
 [2011-01-15 11:59:59] INFO  WEBrick::HTTPServer#start done.
@@ -114,8 +110,7 @@ Terminate batch job (Y/N)? y
 
 E:\_AA-GangsClock\sprint-01\r3gc>
 </pre>
-
-7. Create the initial Home controller, with Index, About and Signin actions.
+6. Create the initial Home controller, with Index, About and Signin actions.
 <pre>
 E:\_AA-GangsClock\sprint-01\r3gc>rails g controller home index about signin
       create  app/controllers/home_controller.rb
@@ -136,7 +131,6 @@ E:\_AA-GangsClock\sprint-01\r3gc>rails g controller home index about signin
 
 E:\_AA-GangsClock\sprint-01\r3gc>
 </pre>
-
 7. Start the server again.
 <pre>
 E:\_AA-GangsClock\1st-phase\r3gc>rails s
@@ -145,13 +139,12 @@ E:\_AA-GangsClock\1st-phase\r3gc>rails s
 .
 .
 </pre>
-
 8. Test each of the actions now available using:
-
-```http://localhost:3000/home/index```
-```http://localhost:3000/home/about```
-```http://localhost:3000/home/signin```
-
+<pre>
+   http://localhost:3000/home/index
+   http://localhost:3000/home/about
+   http://localhost:3000/home/signin
+</pre>
 9. They all should work displaying a "Find me in..." message in a rough page.
 
 * Since index is the default action, our work will start there.
