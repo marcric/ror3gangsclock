@@ -9,12 +9,11 @@
 ### Step by step guide:
 
 1. Create the new application.
-```rails new r3gc```
 <pre>
 Microsoft Windows XP [Version 5.1.2600]
 (C) Copyright 1985-2001 Microsoft Corp.
 
-E:\_AA-GangsClock\1st-phase>rails new r3gc
+E:\_AA-GangsClock\sprint-01>rails new r3gc
       create
       create  README
       create  Rakefile
@@ -41,19 +40,64 @@ E:\_AA-GangsClock\1st-phase>rails new r3gc
       create  vendor/plugins
       create  vendor/plugins/.gitkeep
 
-E:\_AA-GangsClock\1st-phase>cd r3gc
+E:\_AA-GangsClock\sprint-01>cd r3gc
 </pre>
 
-2. Change to the application folder.
-```cd r3gc```
-
 3. You can check the application structure
-```tree```
+<pre>
+E:\_AA-GangsClock\sprint-01\r3gc>tree
+Folder PATH listing for volume Dados
+Volume serial number is 5C89-E09F
+E:.
++---app
+¦   +---controllers
+¦   +---helpers
+¦   +---mailers
+¦   +---models
+¦   +---views
+¦       +---layouts
++---config
+¦   +---environments
+¦   +---initializers
+¦   +---locales
++---db
++---doc
++---lib
+¦   +---tasks
++---log
++---public
+¦   +---images
+¦   +---javascripts
+¦   +---stylesheets
++---script
++---test
+¦   +---fixtures
+¦   +---functional
+¦   +---integration
+¦   +---performance
+¦   +---unit
++---tmp
+¦   +---cache
+¦   +---pids
+¦   +---sessions
+¦   +---sockets
++---vendor
+    +---plugins
+</pre>
 
 4. Start the server
-```rails s```
+<pre>
+E:\_AA-GangsClock\sprint-01\r3gc>rails s
+=> Booting WEBrick
+=> Rails 3.0.3 application starting in development on http://0.0.0.0:3000
+=> Call with -d to detach
+=> Ctrl-C to shutdown server
+[2011-01-12 00:38:06] INFO  WEBrick 1.3.1
+[2011-01-12 00:38:06] INFO  ruby 1.9.2 (2010-08-18) [i386-mingw32]
+[2011-01-12 00:38:06] INFO  WEBrick::HTTPServer#start: pid=3748 port=3000
+</pre>
 
-5. Access and test the application using: http://0.0.0.0:3000;
+5. Access and test the application using: ```http://0.0.0.0:3000```
 
    click the "About your application's environment" link,
    and You should get something like this:
@@ -62,28 +106,70 @@ E:\_AA-GangsClock\1st-phase>cd r3gc
 * Everything should work fine with no warnings.
 
 6. Send a Ctrl-C to shutdown server
+<pre>
+[2011-01-15 11:59:59] INFO  going to shutdown ...
+[2011-01-15 11:59:59] INFO  WEBrick::HTTPServer#start done.
+Exiting
+Terminate batch job (Y/N)? y
+
+E:\_AA-GangsClock\sprint-01\r3gc>
+</pre>
 
 7. Create the initial Home controller, with Index, About and Signin actions.
-```rails g controller home index about signin```
+<pre>
+E:\_AA-GangsClock\sprint-01\r3gc>rails g controller home index about signin
+      create  app/controllers/home_controller.rb
+       route  get "home/signin"
+       route  get "home/about"
+       route  get "home/index"
+      invoke  erb
+      create    app/views/home
+      create    app/views/home/index.html.erb
+      create    app/views/home/about.html.erb
+      create    app/views/home/signin.html.erb
+      invoke  test_unit
+      create    test/functional/home_controller_test.rb
+      invoke  helper
+      create    app/helpers/home_helper.rb
+      invoke    test_unit
+      create      test/unit/helpers/home_helper_test.rb
+
+E:\_AA-GangsClock\sprint-01\r3gc>
+</pre>
 
 7. Start the server again.
-```rails s```
+<pre>
+E:\_AA-GangsClock\1st-phase\r3gc>rails s
+=> Booting WEBrick
+.
+.
+.
+</pre>
 
 8. Test each of the actions now available using:
-```
-   http://localhost:3000/home/index
-   http://localhost:3000/home/about
-   http://localhost:3000/home/signin
-```
+
+```http://localhost:3000/home/index```
+```http://localhost:3000/home/about```
+```http://localhost:3000/home/signin```
 
 9. They all should work displaying a "Find me in..." message in a rough page.
 
 * Since index is the default action, our work will start there.
 * Configure the routes turning the home/index the root page.
-* To do so, change the r3gc/config/routes.rb file to look like this:
+* To do so, change the ```r3gc/config/routes.rb``` file to look like this:
 
-<script src="https://gist.github.com/666277.js?file=camping_app02.rb"></script>
+<pre>
+R3gc::Application.routes.draw do
 
+  root :to => "home#index"
+  get "home/index"
+
+  get "home/about"
+
+  get "home/signin"
+
+end
+</pre>
 
 
 
