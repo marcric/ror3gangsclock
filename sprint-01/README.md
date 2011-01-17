@@ -50,37 +50,37 @@ Folder PATH listing for volume Dados
 Volume serial number is 5C89-E09F
 E:.
 +---app
-¦   +---controllers
-¦   +---helpers
-¦   +---mailers
-¦   +---models
-¦   +---views
-¦       +---layouts
+|   +---controllers
+|   +---helpers
+|   +---mailers
+|   +---models
+|   +---views
+|       +---layouts
 +---config
-¦   +---environments
-¦   +---initializers
-¦   +---locales
+|   +---environments
+|   +---initializers
+|   +---locales
 +---db
 +---doc
 +---lib
-¦   +---tasks
+|   +---tasks
 +---log
 +---public
-¦   +---images
-¦   +---javascripts
-¦   +---stylesheets
+|   +---images
+|   +---javascripts
+|   +---stylesheets
 +---script
 +---test
-¦   +---fixtures
-¦   +---functional
-¦   +---integration
-¦   +---performance
-¦   +---unit
+|   +---fixtures
+|   +---functional
+|   +---integration
+|   +---performance
+|   +---unit
 +---tmp
-¦   +---cache
-¦   +---pids
-¦   +---sessions
-¦   +---sockets
+|   +---cache
+|   +---pids
+|   +---sessions
+|   +---sockets
 +---vendor
     +---plugins
 </pre>
