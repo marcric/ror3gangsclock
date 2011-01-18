@@ -184,7 +184,7 @@ end
 * The file responsible for that is the ```r3gc/app/views/layouts/application.html.erb```
 * Which after some work should look like this:
 
-<script src="https://gist.github.com/783863.js?file=app_layout.html"></script>
+[[gist.github.com/783863]]
 
 * You should, of course, use your own data and preferences instead of mines.
 
