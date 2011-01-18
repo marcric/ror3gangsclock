@@ -1,12 +1,12 @@
-# Sprint 01
+h1. Sprint 01
 
-### In this very first sprint we will:
+h3. In this very first sprint we will:
 
 * Create the project
 * Create the application "Home" page (a starting point only, not the final version)
 * Get it working
 
-### Step by step guide:
+h3. Step by step guide:
 
 **01** - Creating the new application.
 
