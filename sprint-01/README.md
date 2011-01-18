@@ -184,7 +184,7 @@ end
 * The file responsible for that is the ```r3gc/app/views/layouts/application.html.erb```
 * Which after some work should look like this:
 
-<pre>
+<pre><code>
 <!DOCTYPE html> <!-- HTML5 Doctype -->
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en" id="marcric.com">
   <head>
@@ -211,7 +211,7 @@ end
     <%= yield %>
   </body>
 </html>
-</pre>
+</code></pre>
 
 * You should, of course, use your own data and preferences instead of mines.
 
@@ -219,32 +219,32 @@ end
 
 * Change the ```r3gc/app/views/home/index.html.erb``` file to look like this:
 
-<pre>
+<pre><code>
 <h1>Welcome to RoR3 Gang's Clock!</h1>
 <p>This is going to be your step by step guide into Ruby on Rails!</p>
-</pre>
+</code></pre>
 
 * Change the ```r3gc/app/views/home/about.html.erb``` file to look like this:
 
-<pre>
+<pre><code>
 <h1>About Us</h1>
 <p>Gang's Clock is a social networking website for friends around the Globe
 know the local time of each other avoiding wrong time contacts.</p>
-</pre>
+</code></pre>
 
 * Change the ```r3gc/app/views/home/signin.html.erb``` file to look like this:
 
-<pre>
+<pre><code>
 <h1>Sign In & Log In</h1>
 <p>We will provide a Sign In and Log In interface here soon.</p>
-</pre>
+</code></pre>
 
 **11** - Improving the actions.
 
 * Now let's provide spefic titles for each view using the controller methods.
 * After a few work the ```r3gc/app/controllers/home_controller.rb``` file should look like this:
 
-<pre>
+<pre><code>
 class HomeController < ApplicationController
   def index
     @title = "Welcome to Gang's Clock"
@@ -258,14 +258,14 @@ class HomeController < ApplicationController
     @title = "SignIn to Gang's Clock"
   end
 end
-</pre>
+</code></pre>
 
 **12** - Back to the common application layout.
 
 * Finaly we shoud include a navigation bar in all pages.
 * To do so, back to the ```r3gc/app/views/layouts/application.html.erb``` file:
 
-<pre>
+<pre><code>
 <!DOCTYPE html> <!-- HTML5 Doctype -->
 .
 .
@@ -278,7 +278,7 @@ end
     <%= yield %>
   </body>
 </html>
-</pre>
+</code></pre>
 
 * At this point you should have a fully functional static pages navigation system.
 
