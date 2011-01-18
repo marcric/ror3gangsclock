@@ -185,6 +185,7 @@ end
 * Which after some work should look like this:
 
 ```html
+
 <!DOCTYPE html> <!-- HTML5 Doctype -->
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en" id="marcric.com">
   <head>
@@ -211,6 +212,7 @@ end
     <%= yield %>
   </body>
 </html>
+
 ```
 
 ![[gist.github.com/783863]]
