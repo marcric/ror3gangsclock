@@ -184,34 +184,7 @@ end
 * The file responsible for that is the ```r3gc/app/views/layouts/application.html.erb```
 * Which after some work should look like this:
 
-<code><pre>
-<!DOCTYPE html> <!-- HTML5 Doctype -->
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en" id="marcric.com">
-  <head>
-    <title><%= @title %></title>
-    <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
-    <meta charset="ISO-8859-1"> <!-- simplified version; works on legacy browsers -->
-    <meta name="MSSmartTagsPreventParsing" content="true">
-    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-    <meta name="Description" content="Gang's Clock Web Page">
-    <meta name="Distribution" content="Global">
-    <meta name="KeyWords" content="Gang, Clock, Ruby, Ruby on Rails, Trainer On Rails, Rails course, course">
-    <meta name="copyright" content="Copyright (c) 2011-2011 Marcos Ricardo. All Rights Reserved.">
-    <meta name="robots" content="all">
-    <meta name="author" content="Marcos Ricardo">
-    <meta name="googlebot" content="noarchive">
-    <%= csrf_meta_tag %>
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
-    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
-    <%= stylesheet_link_tag :all %>
-    <%= javascript_include_tag :defaults %>
-  </head>
-
-  <body>
-    <%= yield %>
-  </body>
-</html>
-</pre></code>
+<script src="https://gist.github.com/783863.js?file=app_layout.html"></script>
 
 * You should, of course, use your own data and preferences instead of mines.
 
