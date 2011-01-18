@@ -184,7 +184,7 @@ end
 * The file responsible for that is the ```r3gc/app/views/layouts/application.html.erb```
 * Which after some work should look like this:
 
-<pre><code>
+<code><pre>
 <!DOCTYPE html> <!-- HTML5 Doctype -->
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en" id="marcric.com">
   <head>
@@ -211,7 +211,7 @@ end
     <%= yield %>
   </body>
 </html>
-</code></pre>
+</pre></code>
 
 * You should, of course, use your own data and preferences instead of mines.
 
