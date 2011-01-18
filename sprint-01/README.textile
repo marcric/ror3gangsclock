@@ -290,9 +290,9 @@ end
 **13** - Adding style.
 
 * One of the possible improvements is the use of stylesheets.
-* CSS files should be created/copied into the @public/stylesheets@ folder.
-* To accomplish that you can copy the blues.css file from the @resources@
-folder into the @public/stylesheets@ one.
+* CSS files should be created/copied into the @r3gc/public/stylesheets@ folder.
+* To accomplish that you can copy the @blues.css@ file from the @resources@
+folder into the @r3gc/public/stylesheets@ one.
 
 **Take your time make your tests and Your own improvements.**
 
