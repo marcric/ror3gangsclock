@@ -104,7 +104,7 @@ E:\_AA-GangsClock\sprint-01\r3gc>rails s
 
    click the "About your application's environment" link,
    and You should get something like this:
-![Project Environment](https://github.com/marcric/ror3gangsclock/wiki/rails_environment.png "Environment")
+!https://github.com/marcric/ror3gangsclock/wiki/rails_environment.png!
 
 * Everything should work fine with no warnings.
 
