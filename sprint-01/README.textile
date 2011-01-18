@@ -186,7 +186,7 @@ end
 **10** - Improving the generated views:
 
 * The first thing we should do is improve the general application page layout and configuration.
-* The file responsible for that is the ```r3gc/app/views/layouts/application.html.erb```
+* The file responsible for that is the @r3gc/app/views/layouts/application.html.erb@
 * Which after some work should look like this:
 
 <pre>
