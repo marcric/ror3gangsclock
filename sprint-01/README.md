@@ -8,7 +8,7 @@
 
 ### Step by step guide:
 
-**1** - Create the new application.
+**01** - Creating the new application.
 <pre>
 Microsoft Windows XP [Version 5.1.2600]
 (C) Copyright 1985-2001 Microsoft Corp.
@@ -43,7 +43,7 @@ E:\_AA-GangsClock\sprint-01>rails new r3gc
 E:\_AA-GangsClock\sprint-01>cd r3gc
 </pre>
 
-**2** - You can check the application structure
+**02** - Checking the application structure
 <pre>
 E:\_AA-GangsClock\sprint-01\r3gc>tree
 Folder PATH listing for volume Dados
@@ -85,7 +85,7 @@ E:.
     +---plugins
 </pre>
 
-**3** - Start the server
+**03** - Starting the server
 <pre>
 E:\_AA-GangsClock\sprint-01\r3gc>rails s
 => Booting WEBrick
@@ -97,7 +97,7 @@ E:\_AA-GangsClock\sprint-01\r3gc>rails s
 [2011-01-12 00:38:06] INFO  WEBrick::HTTPServer#start: pid=3748 port=3000
 </pre>
 
-**4** - Access and test the application using: ```http://0.0.0.0:3000```
+**04** - Access and test the application using: ```http://0.0.0.0:3000```
 
    click the "About your application's environment" link,
    and You should get something like this:
@@ -105,7 +105,7 @@ E:\_AA-GangsClock\sprint-01\r3gc>rails s
 
 * Everything should work fine with no warnings.
 
-**5** - Send a Ctrl-C to shutdown server
+**05** - Send a Ctrl-C to shutdown server
 <pre>
 [2011-01-15 11:59:59] INFO  going to shutdown ...
 [2011-01-15 11:59:59] INFO  WEBrick::HTTPServer#start done.
@@ -115,7 +115,7 @@ Terminate batch job (Y/N)? y
 E:\_AA-GangsClock\sprint-01\r3gc>
 </pre>
 
-**6** - Create the initial Home controller, with Index, About and Signin actions.
+**06** - Creating the initial Home controller, with Index, About and Signin actions.
 <pre>
 E:\_AA-GangsClock\sprint-01\r3gc>rails g controller home index about signin
       create  app/controllers/home_controller.rb
@@ -137,7 +137,7 @@ E:\_AA-GangsClock\sprint-01\r3gc>rails g controller home index about signin
 E:\_AA-GangsClock\sprint-01\r3gc>
 </pre>
 
-**7** - Start the server again.
+**07** - Starting the server again.
 <pre>
 E:\_AA-GangsClock\1st-phase\r3gc>rails s
 => Booting WEBrick
@@ -146,14 +146,16 @@ E:\_AA-GangsClock\1st-phase\r3gc>rails s
 .
 </pre>
 
-**8** - Test each of the actions now available using:
+**08** - Test each of the actions now available using:
 <pre>
    http://localhost:3000/home/index
    http://localhost:3000/home/about
    http://localhost:3000/home/signin
 </pre>
 
-**9** - They all should work displaying a "Find me in..." message in a rough page.
+* They all should work displaying a "Find me in..." message in a rough page.
+
+**09** - Defining the root route.
 
 * Since index is the default action, our work will start there.
 * Configure the routes turning the home/index the root page.
@@ -172,5 +174,125 @@ R3gc::Application.routes.draw do
 end
 </pre>
 
+* Delete the r3gc/public/index.html file
+* Access http://localhost:3000/ again
+* It should display the index action page.
 
+**10** - Improving the generated views:
+
+* The first thing we should do is improve the general application page layout and configuration.
+* The file responsible for that is the ```r3gc/app/views/layouts/application.html.erb```
+* Which after some work should look like this:
+
+<pre>
+<!DOCTYPE html> <!-- HTML5 Doctype -->
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en" id="marcric.com">
+  <head>
+    <title><%= @title %></title>
+    <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+    <meta charset="ISO-8859-1"> <!-- simplified version; works on legacy browsers -->
+    <meta name="MSSmartTagsPreventParsing" content="true">
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+    <meta name="Description" content="Gang's Clock Web Page">
+    <meta name="Distribution" content="Global">
+    <meta name="KeyWords" content="Gang, Clock, Ruby, Ruby on Rails, Trainer On Rails, Rails course, course">
+    <meta name="copyright" content="Copyright (c) 2011-2011 Marcos Ricardo. All Rights Reserved.">
+    <meta name="robots" content="all">
+    <meta name="author" content="Marcos Ricardo">
+    <meta name="googlebot" content="noarchive">
+    <%= csrf_meta_tag %>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+    <%= stylesheet_link_tag :all %>
+    <%= javascript_include_tag :defaults %>
+  </head>
+
+  <body>
+    <%= yield %>
+  </body>
+</html>
+</pre>
+
+* You should, of course, use your own data and preferences instead of mines.
+
+* Let's now improve each of the corresponding action view.
+
+* Change the ```r3gc/app/views/home/index.html.erb``` file to look like this:
+
+<pre>
+<h1>Welcome to RoR3 Gang's Clock!</h1>
+<p>This is going to be your step by step guide into Ruby on Rails!</p>
+</pre>
+
+* Change the ```r3gc/app/views/home/about.html.erb``` file to look like this:
+
+<pre>
+<h1>About Us</h1>
+<p>Gang's Clock is a social networking website for friends around the Globe
+know the local time of each other avoiding wrong time contacts.</p>
+</pre>
+
+* Change the ```r3gc/app/views/home/signin.html.erb``` file to look like this:
+
+<pre>
+<h1>Sign In & Log In</h1>
+<p>We will provide a Sign In and Log In interface here soon.</p>
+</pre>
+
+**11** - Improving the actions.
+
+* Now let's provide spefic titles for each view using the controller methods.
+* After a few work the ```r3gc/app/controllers/home_controller.rb``` file should look like this:
+
+<pre>
+class HomeController < ApplicationController
+  def index
+    @title = "Welcome to Gang's Clock"
+  end
+
+  def about
+    @title = "About Gang's Clock"
+  end
+
+  def signin
+    @title = "SignIn to Gang's Clock"
+  end
+end
+</pre>
+
+**12** - Back to the common application layout.
+
+* Finaly we shoud include a navigation bar in all pages.
+* To do so, back to the ```r3gc/app/views/layouts/application.html.erb``` file:
+
+<pre>
+<!DOCTYPE html> <!-- HTML5 Doctype -->
+.
+.
+.
+  <body>
+    <%= link_to_unless_current "Home",     :action => "index" %> |
+    <%= link_to_unless_current "About Us", :action => "about" %> |
+    <%= link_to_unless_current "Sign In",  :action => "signin" %>
+
+    <%= yield %>
+  </body>
+</html>
+</pre>
+
+* At this point you should have a fully functional static pages navigation system.
+
+**13** - Adding style.
+
+* One of the possible improvements is the use of stylesheets.
+* CSS files should be created/copied into the public/stylesheets folder.
+* To accomplish that you can copy the blues.css file from the ```resources```
+folder into the ```public/stylesheets``` one.
+
+**Take your time make your tests and Your own improvements.**
+
+**14** - Designing the real page.
+
+* Now it's time to create the real index action page layout.
+* Strictly using HTML and CSS for that.
 
