@@ -9,6 +9,7 @@
 ### Step by step guide:
 
 **01** - Creating the new application.
+
 <pre>
 Microsoft Windows XP [Version 5.1.2600]
 (C) Copyright 1985-2001 Microsoft Corp.
@@ -44,6 +45,7 @@ E:\_AA-GangsClock\sprint-01>cd r3gc
 </pre>
 
 **02** - Checking the application structure
+
 <pre>
 E:\_AA-GangsClock\sprint-01\r3gc>tree
 Folder PATH listing for volume Dados
@@ -86,6 +88,7 @@ E:.
 </pre>
 
 **03** - Starting the server
+
 <pre>
 E:\_AA-GangsClock\sprint-01\r3gc>rails s
 => Booting WEBrick
@@ -106,6 +109,7 @@ E:\_AA-GangsClock\sprint-01\r3gc>rails s
 * Everything should work fine with no warnings.
 
 **05** - Send a Ctrl-C to shutdown server
+
 <pre>
 [2011-01-15 11:59:59] INFO  going to shutdown ...
 [2011-01-15 11:59:59] INFO  WEBrick::HTTPServer#start done.
@@ -116,6 +120,7 @@ E:\_AA-GangsClock\sprint-01\r3gc>
 </pre>
 
 **06** - Creating the initial Home controller, with Index, About and Signin actions.
+
 <pre>
 E:\_AA-GangsClock\sprint-01\r3gc>rails g controller home index about signin
       create  app/controllers/home_controller.rb
@@ -138,6 +143,7 @@ E:\_AA-GangsClock\sprint-01\r3gc>
 </pre>
 
 **07** - Starting the server again.
+
 <pre>
 E:\_AA-GangsClock\1st-phase\r3gc>rails s
 => Booting WEBrick
@@ -147,6 +153,7 @@ E:\_AA-GangsClock\1st-phase\r3gc>rails s
 </pre>
 
 **08** - Test each of the actions now available using:
+
 <pre>
    http://localhost:3000/home/index
    http://localhost:3000/home/about
@@ -221,32 +228,32 @@ end
 
 * Change the ```r3gc/app/views/home/index.html.erb``` file to look like this:
 
-<pre><code>
+<pre>
 <h1>Welcome to RoR3 Gang's Clock!</h1>
 <p>This is going to be your step by step guide into Ruby on Rails!</p>
-</code></pre>
+</pre>
 
 * Change the ```r3gc/app/views/home/about.html.erb``` file to look like this:
 
-<pre><code>
+<pre>
 <h1>About Us</h1>
 <p>Gang's Clock is a social networking website for friends around the Globe
 know the local time of each other avoiding wrong time contacts.</p>
-</code></pre>
+</pre>
 
 * Change the ```r3gc/app/views/home/signin.html.erb``` file to look like this:
 
-<pre><code>
+<pre>
 <h1>Sign In & Log In</h1>
 <p>We will provide a Sign In and Log In interface here soon.</p>
-</code></pre>
+</pre>
 
 **11** - Improving the actions.
 
 * Now let's provide spefic titles for each view using the controller methods.
 * After a few work the ```r3gc/app/controllers/home_controller.rb``` file should look like this:
 
-<pre><code>
+<pre>
 class HomeController < ApplicationController
   def index
     @title = "Welcome to Gang's Clock"
@@ -260,14 +267,14 @@ class HomeController < ApplicationController
     @title = "SignIn to Gang's Clock"
   end
 end
-</code></pre>
+</pre>
 
 **12** - Back to the common application layout.
 
 * Finaly we shoud include a navigation bar in all pages.
 * To do so, back to the ```r3gc/app/views/layouts/application.html.erb``` file:
 
-<pre><code>
+<pre>
 <!DOCTYPE html> <!-- HTML5 Doctype -->
 .
 .
@@ -280,7 +287,7 @@ end
     <%= yield %>
   </body>
 </html>
-</code></pre>
+</pre>
 
 * At this point you should have a fully functional static pages navigation system.
 
