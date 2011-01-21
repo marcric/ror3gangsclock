@@ -301,4 +301,4 @@ folder into the @r3gc/public/stylesheets@ one.
 * Now it's time to create the real index action page layout.
 * Strictly using HTML and CSS for that.
 
-p. *It will be accomplished in "sprint 2":sprint-01.*
+p. *It will be accomplished in "sprint 2":sprint-02.*
