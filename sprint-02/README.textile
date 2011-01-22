@@ -104,9 +104,7 @@ p. And using the _cascading_ CSS properties it could be easily transformed into 
 p. *It will be accomplished in "sprint 3":sprint-03.*
 
 p. &nbsp;
-
-<hr>
-
+!https://github.com/marcric/ror3gangsclock/wiki/hr.png!
 p. &nbsp;
 
 # You can find @r3gc01.htm@ and it's corresponding CSS file @basic_html5.css@
