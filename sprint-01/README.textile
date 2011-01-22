@@ -293,15 +293,15 @@ h3. Some improvements:
 
 p. One of the possible improvements is to get rid of the more verbose URLs
 
-http://localhost:3000/home/about
+@http://localhost:3000/home/about@
 and
-http://localhost:3000/home/signin
+@http://localhost:3000/home/signin@
 
 and start using these:
 
-http://localhost:3000/about
+@http://localhost:3000/about@
 and
-http://localhost:3000/signin
+@http://localhost:3000/signin@
 
 p. To do so, change the @r3gc/config/routes.rb@ file to look like this:
 
