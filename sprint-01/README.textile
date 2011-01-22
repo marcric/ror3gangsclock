@@ -191,20 +191,9 @@ end
 
 <pre>
 <!DOCTYPE html> <!-- HTML5 Doctype -->
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en" id="marcric.com">
+<html lang="en">
   <head>
     <title><%= @title %></title>
-    <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
-    <meta charset="ISO-8859-1"> <!-- simplified version; works on legacy browsers -->
-    <meta name="MSSmartTagsPreventParsing" content="true">
-    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-    <meta name="Description" content="Gang's Clock Web Page">
-    <meta name="Distribution" content="Global">
-    <meta name="KeyWords" content="Gang, Clock, Ruby, Ruby on Rails, Trainer On Rails, Rails course, course">
-    <meta name="copyright" content="Copyright (c) 2011-2011 Marcos Ricardo. All Rights Reserved.">
-    <meta name="robots" content="all">
-    <meta name="author" content="Marcos Ricardo">
-    <meta name="googlebot" content="noarchive">
     <%= csrf_meta_tag %>
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
@@ -213,6 +202,10 @@ end
   </head>
 
   <body>
+    <%= link_to_unless_current "Home",     home_path  %> |
+    <%= link_to_unless_current "About Us", about_path %> |
+    <%= link_to_unless_current "Sign In",  signin_path %>
+
     <%= yield %>
   </body>
 </html>
@@ -340,6 +333,8 @@ p. And the the @r3gc/app/views/layouts/application.html.erb@ file to look like t
 * CSS files should be created/copied into the @r3gc/public/stylesheets@ folder to be automagically used.
 * To accomplish that you can copy the @blues.css@ file from the @resources@
 folder into the @r3gc/public/stylesheets@ one.
+* You can also copy the @favicon.ico@ file from the @resources@ folder to the @r3gc/public/images@
+one and start seeing an icon in the browser's address bar and in the tab where the page is beeing show.
 
 *Take your time make your tests and Your own improvements.*
 
