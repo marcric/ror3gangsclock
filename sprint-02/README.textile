@@ -105,7 +105,7 @@ p. *It will be accomplished in "sprint 3":sprint-03.*
 
 p. &nbsp;
 
----
+<hr>
 
 p. &nbsp;
 
