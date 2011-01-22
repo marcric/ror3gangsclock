@@ -1,0 +1,12 @@
+h1. r3gc
+
+h2. Sprint 1
+
+h3. In this sprint we will:
+
+# Create the project
+# Create the Home controller and it's views
+# Establish it as root page
+# Improve the generated views
+# Get better routes
+# Apply basic CSS style
