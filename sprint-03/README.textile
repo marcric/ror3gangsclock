@@ -1,0 +1,26 @@
+h1. Sprint 03
+
+h2. Retrofiting HTML into a Rails template
+
+h3. In this very first sprint we will:
+
+* Something
+* Something else
+
+h3. Step by step guide:
+
+*01* - Step 1.
+
+p. First paragraph.
+
+
+
+
+
+
+
+
+
+
+*Take your time make your tests and Your own improvements.*
+

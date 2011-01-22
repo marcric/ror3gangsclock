@@ -38,8 +38,9 @@ it's way of working. So I will use it.
 
 p. Do you remember our "first sketch":https://github.com/marcric/ror3gangsclock/wiki/Basic-Idea ?
 
-p. Thinking on how to implement it and some other practical stuff, like my current
-personal page layout for instance, drives me to a new version that should look like this:
+p. Thinking on how to implement it and some other practical stuff,
+like "my current personal page layout":http://marcric.com/  for
+instance, drives me to a new version that should look like this:
 
 !https://github.com/marcric/ror3gangsclock/wiki/project_newlook.png!
 
@@ -81,14 +82,14 @@ p. To stay in the path of this guide, there are some basics you page SHOULD have
 </html>
 </pre>
 
-p. If you are on lazy days, or have no HTML/CSS skills at all, you can grab
-all that HTML/CSS work fn1. from this sprint @public@ folder.
+fn1. If you are on lazy days, or have no HTML/CSS skills at all, you can grab
+all that HTML/CSS work from this sprint @public@ folder.
 
-p. After a few working hours I came up with this fn2. version:
+fn2. After a few working hours I came up with this version:
 
 !https://github.com/marcric/ror3gangsclock/wiki/r3gc_sprint-02_01.png!
 
-p. And using the CSS cascading properties it could be easily transformed in this one:
+p. And using the _cascading_ CSS properties it could be easily transformed into this one:
 
 !https://github.com/marcric/ror3gangsclock/wiki/r3gc_sprint-02_02.png!
 
