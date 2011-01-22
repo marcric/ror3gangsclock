@@ -1,0 +1,104 @@
+body {
+	background-color: #FFFF66;
+}
+
+h1 { font-size: 1.2em; margin: 0em 0; }
+h2 { font-size: 1.7em; margin: 0em 0; }
+h3 { font-size: 0.9em; margin: 0em 0; text-align: right;}
+
+header, nav, article, aside, footer {
+  padding: 10px 10px 10px 10px;
+	display:block;
+}
+
+nav {
+	float: right;
+  list-style: none;
+  display: inline;
+  margin: 0px 470px 0px 0px;
+	color: #202020;
+	background-color: #00B383;
+	border: 4px dashed #004D38;
+}
+
+nav img {
+  float:left;
+  margin: 0px 0px 0px 0px;
+  width: 140px;
+  height: 40px;
+}
+
+header {
+  position: absolute;
+	min-width: 660px;
+  margin: 90px 0px 0px 0px;
+	text-align:center;
+	color: #202020;
+	background-color: #33CCFF;
+	border: 4px dashed #0089B3;
+	display:block;
+}
+
+header img {
+  float:left;
+  margin: 0px 0px 0px 0px;
+  width: 150px;
+  height: 40px;
+}
+
+article {
+	float:left;
+	min-width: 660px;
+	min-height: 460px;
+	color: #202020;
+	background-color: #C78F8F;
+	border: 4px dashed #4B2626;
+  margin: 100px 0px 0px 0px;
+}
+
+section {
+	float:left;
+	color: #202020;
+	background-color: #FF9966;
+	border: 4px dashed #B33C00;
+  margin: 10px 10px 10px 10px;
+  padding: 10px 10px 10px 10px;
+}
+
+aside {
+	float:right;
+	margin-left:1em;
+	padding-left:.9em;
+	color: #202020;
+	background-color: #FF3333;
+	border: 4px dashed #4D0000;
+}
+
+aside img {
+  float:left;
+  margin: 0px 0px 0px 0px;
+  padding: 3px 10px 3px 10px;
+  width: 120px;
+  height: 60px;
+}
+
+footer {
+  position: absolute;
+	min-width: 660px;
+	text-align:center;
+	font-size:smaller;
+	text-transform:uppercase;
+  margin: 680px 0px 0px 0px;
+	color: #202020;
+	background-color: #FF7AE4;
+	border: 4px dashed #C7009F;
+}
+
+footer img {
+  float:left;
+  margin: 0px 0px 0px 0px;
+  padding: 3px 10px 3px 10px;
+  width: 120px;
+  height: 60px;
+}
+

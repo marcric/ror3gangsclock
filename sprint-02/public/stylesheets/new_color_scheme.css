@@ -1,0 +1,186 @@
+/* Customized colors for Gang's Clock */
+
+body {
+	background-color: #E1EBED;
+}
+
+aside {
+	color: #FFFFFF;
+}
+
+footer {
+  background-color:#A7C9D2;
+	color: #1939CF;
+}
+
+footer a {
+	color: #FFFFFF;
+}
+
+footer a:hover, a:active, a:focus h1 {
+  color: #C07850;
+}
+
+article header aside p {
+	color: #FFC966;
+}
+
+header section {
+	color: #10133F;
+}
+
+.page {
+  border: solid blue 0px;
+}
+
+.box {
+  border: solid blue 1px;
+}
+
+.trans_box {
+  color: #000EAF;
+}
+
+.trans_box header {
+  background-color: #539ADF;
+}
+
+/* Extends box and trans_box - create as many as you wish */
+.saddlebrown {
+  color: #F5CEB1;
+  background-color: #423C3E; /* SaddleBrown #423C3E */
+}
+.indianred {
+  color: #F5CEB1;
+  background-color: #76655E; /* IndianRed #76655E  */
+}
+.desertsky {
+  color: #00386F;
+  background-color: #2992DF;
+}
+.darksky {
+  color: #00386F;
+  background-color: #2F7BBF;
+}
+/* end of box colors */
+
+.full {
+  background-color:#C7BEA3;
+}
+.full header h1 {
+  color:#202020;
+  background-color:#ffffff;
+}
+
+.full article {
+  background-color:#C7BEA3;
+}
+
+.article_p {
+  background-color:#ffffff;
+}
+
+.full_article_h1 {
+  background-color:#ffffff;
+	text-shadow: 2px 2px 3px #5D5D5D;
+}
+
+.full_article_h2 {
+  background-color:#ffffff;
+	text-shadow: 2px 2px 3px #5D5D5D;
+}
+
+.social {
+	background-color:#202020;
+}
+
+.social h1 {
+  color:#ffffff;
+	text-shadow: 2px 2px 3px #DBDBDB;
+}
+
+.author {
+	background-color:#202020;
+}
+
+.full .author {
+	background-color:#202020;
+	color:#ffffff;
+}
+
+.full .author p {
+	background-color:#202020;
+	color:#ffffff;
+}
+
+.navMenu a {
+	color: #111C8F;
+}
+
+.navMenu a:visited {color: #F8C240;}
+
+.moveMenuItem a:hover {
+  color: #FFDF80;
+}
+
+.hNavMenu a {
+	color: #FFC966;
+	text-shadow: 2px 2px 3px #202020;
+}
+
+.hNavMenu a:visited {color: #F8C240;}
+
+.full article footer {
+  background-color:#B3A884;
+	color: #000000;
+}
+
+.full article footer a {
+	color: #000066;
+}
+
+.full article footer a:hover {
+	color: #0000B3;
+}
+
+.full article footer a:visited {
+	color: #4D4DFF;
+}
+
+.pre-footer h2 {
+	color: #FF8000;
+}
+
+.flat-list a {
+	color: #10133F;
+}
+.flat-list a:hover {
+	color: #3340CF;
+}
+.flat-list a:visited {
+	color: #59629F;
+}
+
+.by a {
+	color: #DFF3FF;
+}
+.by a:hover {
+	color: #3650B9;
+}
+
+.member {
+  background: #313F9F;
+  background-image: -moz-linear-gradient(top, #313F9F, #395BC9);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#313F9F), to(#395BC9));
+  color: #DFE2FF;
+}
+
+.now {
+  background: #63A3E3;
+  background-image: -moz-linear-gradient(top, #63A3E3, #D3F0FE);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#63A3E3), to(#D3F0FE));
+  color: #000000;
+}
+.bar {
+  background: #D3F0FE;
+}

@@ -1,5 +1,7 @@
 h1. Sprint 01
 
+h2. Creating the basic structure
+
 h3. In this very first sprint we will:
 
 * Create the project
@@ -340,7 +342,7 @@ one and start seeing an icon in the browser's address bar and in the tab where t
 
 *15* - Designing the real page.
 
-* Now it's time to create the real index action page layout.
-* Strictly using HTML and CSS for that.
+* Now it's time to create a real layout for that index action page.
+* We will be strictly using HTML and CSS for that.
 
 p. *It will be accomplished in "sprint 2":sprint-02.*
