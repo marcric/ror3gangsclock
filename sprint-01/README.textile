@@ -287,16 +287,63 @@ end
 
 * At this point you should have a fully functional static pages navigation system.
 
-*13* - Adding style.
+h3. Some improvements:
 
-* One of the possible improvements is the use of stylesheets.
-* CSS files should be created/copied into the @r3gc/public/stylesheets@ folder.
+*13* - Getting better routes.
+
+p. One of the possible improvements is to get rid of the more verbose URLs
+
+http://localhost:3000/home/about
+and
+http://localhost:3000/home/signin
+
+and start using these:
+
+http://localhost:3000/about
+and
+http://localhost:3000/signin
+
+p. To do so, change the @r3gc/config/routes.rb@ file to look like this:
+
+<pre>
+R3gc::Application.routes.draw do
+
+  root :to => "home#index"
+
+  match "/home" => "home#index", :as => :home
+  match "/about" => "home#about", :as => :about
+  match "/signin" => "home#signin", :as => :signin
+
+end
+</pre>
+
+p. And the the @r3gc/app/views/layouts/application.html.erb@ file to look like this:
+
+<pre>
+<!DOCTYPE html> <!-- HTML5 Doctype -->
+.
+.
+.
+  <body>
+    <%= link_to_unless_current "Home",     home_path  %> |
+    <%= link_to_unless_current "About Us", about_path %> |
+    <%= link_to_unless_current "Sign In",  signin_path %>
+
+    <%= yield %>
+  </body>
+</html>
+</pre>
+
+*14* - Adding style.
+
+* Another possible improvement is the use of stylesheets.
+* CSS files should be created/copied into the @r3gc/public/stylesheets@ folder to be automagically used.
 * To accomplish that you can copy the @blues.css@ file from the @resources@
 folder into the @r3gc/public/stylesheets@ one.
 
 *Take your time make your tests and Your own improvements.*
 
-*14* - Designing the real page.
+*15* - Designing the real page.
 
 * Now it's time to create the real index action page layout.
 * Strictly using HTML and CSS for that.
