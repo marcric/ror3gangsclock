@@ -33,8 +33,6 @@ h3. How does it begun? Who is behind it?
 
  _*"Marcos Ricardo(MarcRic's Home)":http://marcric.com*_
 
----
-
 h2. License
 
 This project is released under the "Creative Commons(Creative Commons by-sa page)":http://creativecommons.org/licenses/by-sa/3.0/us/ License, including all CSS and design stuff.
@@ -42,3 +40,5 @@ This project is released under the "Creative Commons(Creative Commons by-sa page
 h2. Copyright
 
 Copyright (c) 2011. See License for details.
+
+!https://github.com/marcric/ror3gangsclock/wiki/_Footer.textile!
