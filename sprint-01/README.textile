@@ -333,10 +333,31 @@ p. And the the @r3gc/app/views/layouts/application.html.erb@ file to look like t
 
 * Another possible improvement is the use of stylesheets.
 * CSS files should be created/copied into the @r3gc/public/stylesheets@ folder to be automagically used.
-* To accomplish that you can copy the @blues.css@ file from the @resources@
-folder into the @r3gc/public/stylesheets@ one.
-* You can also copy the @favicon.ico@ file from the @resources@ folder to the @r3gc/public/images@
-one and start seeing an icon in the browser's address bar and in the tab where the page is beeing show.
+* To accomplish that you can copy the @blues.css@ file from the @resources@ folder into the @r3gc/public/stylesheets@ one.
+* You will also need to change the @r3gc/app/views/layouts/application.html.erb@ file to support the styles, it will look something like this.
+
+<pre>
+<!DOCTYPE html> <!-- HTML5 Doctype -->
+.
+.
+.
+  <body>
+    <div id="container">
+      <div id="header">RailsSpace</div>
+      <div id="nav">
+        <%= link_to_unless_current "Home",     home_path  %> |
+        <%= link_to_unless_current "About Us", about_path %> |
+        <%= link_to_unless_current "Sign In",  signin_path %>
+      </div>
+      <div id="content">
+        <%= yield %>
+      </div>
+    </div>
+  </body>
+</html>
+</pre>
+
+* You can also copy the @favicon.ico@ file from the @resources@ folder to the @r3gc/public/images@ one and start seeing an icon in the browser's address bar and in the tab where the page is beeing show.
 
 *Take your time make your tests and Your own improvements.*
 
