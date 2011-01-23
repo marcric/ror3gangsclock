@@ -1,4 +1,4 @@
-h1. &nbsp; RoR3 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Gang's &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Clock
+h1. &nbsp;&nbsp;&nbsp; RoR3 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Gang's &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Clock
 
 &nbsp;&nbsp;&nbsp; !https://github.com/marcric/ror3gangsclock/wiki/rails3.png! &nbsp;&nbsp; !https://github.com/marcric/ror3gangsclock/wiki/gang.png! &nbsp;&nbsp; !https://github.com/marcric/ror3gangsclock/wiki/clock.png!
 
