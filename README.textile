@@ -40,5 +40,3 @@ This project is released under the "Creative Commons(Creative Commons by-sa page
 h2. Copyright
 
 Copyright (c) 2011. See License for details.
-
-!https://github.com/marcric/ror3gangsclock/wiki/_Footer.textile!
