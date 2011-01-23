@@ -1,6 +1,6 @@
 h1. &nbsp; RoR3 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Gang's &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Clock
 
-&nbsp;&nbsp;&nbsp; !wiki/rails3.png! &nbsp;&nbsp; !wiki/gang.png! &nbsp;&nbsp; !wiki/clock.png!
+&nbsp;&nbsp;&nbsp; !https://github.com/marcric/ror3gangsclock/wiki/rails3.png! &nbsp;&nbsp; !https://github.com/marcric/ror3gangsclock/wiki/gang.png! &nbsp;&nbsp; !https://github.com/marcric/ror3gangsclock/wiki/clock.png!
 
 h3. What is it?
 
