@@ -10,10 +10,16 @@
   </head>
 
   <body>
-    <%= link_to_unless_current "Home",     home_path  %> |
-    <%= link_to_unless_current "About Us", about_path %> |
-    <%= link_to_unless_current "Sign In",  signin_path %>
-
-    <%= yield %>
+    <div id="container">
+      <div id="header">RailsSpace</div>
+      <div id="nav">
+        <%= link_to_unless_current "Home",     home_path  %> |
+        <%= link_to_unless_current "About Us", about_path %> |
+        <%= link_to_unless_current "Sign In",  signin_path %>
+      </div>
+      <div id="content">
+        <%= yield %>
+      </div>
+    </div>
   </body>
 </html>
